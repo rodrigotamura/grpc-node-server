@@ -1,0 +1,34 @@
+// users.proto
+syntax = "proto3";
+
+service UserService {
+  rpc List (Void) returns (UserListResponse);
+  rpc GetById (UserFindRequest) returns (UserFindResponse);
+  rpc Create (UserCreateRequest) returns (UserFindResponse);
+}
+
+message Void {}
+
+message User {
+  int32 id = 1;
+  string name = 2;
+  string last_name = 3;
+  int32 age = 4;
+  bool client = 5;
+}
+
+message UserCreateRequest {
+  User user = 1;
+}
+
+message UserFindRequest {
+  int32 id = 1;
+}
+
+message UserFindResponse {
+  User user = 1;
+}
+
+message UserListResponse {
+  repeated User users = 1;
+}
