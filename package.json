@@ -1,0 +1,26 @@
+{
+  "name": "grpc-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type" : "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigotamura/grpc-node-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigotamura/grpc-node-server/issues"
+  },
+  "homepage": "https://github.com/rodrigotamura/grpc-node-server#readme",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.7.0",
+    "@grpc/proto-loader": "^0.7.2"
+  }
+}

@@ -12,7 +12,7 @@ message Void {}
 message User {
   int32 id = 1;
   string name = 2;
-  string last_name = 3;
+  string lastName = 3;
   int32 age = 4;
   bool client = 5;
 }
